@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Atividade>
+
+<h2>Atividades</h2>
+
+<table>
+    <thead>
+    <th>ID</th>
+    <th>Código</th>
+    <th>Descrição</th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.codigo</td>
+                <td>@item.descricao</td>
+
+            </tr>
+        }
+        </tbody>
+</table>

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Perfil>
+
+<h2>Perfil</h2>
+@foreach (var item in Model)
+{
+    <p>
+        @Html.DisplayFor(modelItem => item.descricao)
+    </p>
+}

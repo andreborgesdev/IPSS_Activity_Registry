@@ -1,0 +1,21 @@
+﻿@model Utente
+
+<h2>Utente: @Model.nome</h2>
+<table>
+    <thead>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Genero</th>
+    <th>Nascimento</th>
+    <th>Url</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.id</td>
+            <td>@Model.nome</td>
+            <td>@Model.genero</td>
+            <td>@Model.dataNascimento</td>
+            <td>@Model.urlFoto</td>
+        </tr>
+    </tbody>
+</table>
